@@ -1,0 +1,8 @@
+<!-- fragment_return_option_false.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp">
+
+    <!-- Add your UI components here to display booking details for return option false -->
+
+</RelativeLayout>

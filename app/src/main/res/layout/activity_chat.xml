@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChatActivity"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="384dp"
+        android:layout_height="616dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="24dp" />
+
+    <RelativeLayout
+        android:id="@+id/sendMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/messageEd"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:hint="Write message here"
+            android:padding="15dp" />
+
+        <ImageButton
+            android:id="@+id/sendmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/send" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/sendmessage"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginRight="71dp"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:src="@drawable/send" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-48dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/enterbtn"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/frame" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/msgvec" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/uservec" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/calvec" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="#000000"
+    tools:context=".Payments">
+
+    <!-- Existing UI elements -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Payment details CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/paymentCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="#A9A9A9"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView10">
+
+        <LinearLayout
+            android:layout_width="377dp"
+            android:layout_height="598dp"
+            android:background="#AAA2A2"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Payment Method RadioButtons -->
+            <TextView
+                android:id="@+id/paymentMethodLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/paymentMethodRadioGroup"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/visaRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visa"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/masterCardRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MasterCard"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+    <!-- Card Number -->
+            <TextView
+                android:id="@+id/cardNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Number"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Card Holder Name -->
+            <EditText
+                android:id="@+id/cardNumberEditText"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/txtregbg"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cardHolderNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Holder Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cardHolderNameEditText"
+                android:layout_width="326dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/txtregbg"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Expire Date -->
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/expireMonthLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Expire Month"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/expireMonthEditText"
+                    android:layout_width="54dp"
+                    android:layout_height="51dp"
+                    android:background="@drawable/txtregbg"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/expireYearLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Expire Year"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/expireYearEditText"
+                    android:layout_width="58dp"
+
+                    android:layout_height="51dp"
+                    android:background="@drawable/txtregbg"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Security Code -->
+            <TextView
+                android:id="@+id/securityCodeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Code"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/securityCodeEditText"
+                android:layout_width="326dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/txtregbg"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Offer Code -->
+            <TextView
+                android:id="@+id/offerCodeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Offer Code"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/offerCodeEditText"
+                android:layout_width="322dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/txtregbg"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/savePaymentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/loginroundbtn"
+                android:text="Save"
+                android:textColor="#000000"
+                app:backgroundTint="#FABD05" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="675dp"
+        android:background="@drawable/enterbtn"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/frame" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/msgvec" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/uservec" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/calvec" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

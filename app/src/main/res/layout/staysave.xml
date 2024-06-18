@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="802dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+
+
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Ash color background -->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Stay Safe"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptiontextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/txtregbg"
+        android:backgroundTint="#888686"
+        android:ellipsize="middle"
+        android:paddingTop="20dp"
+        android:text="Secure Transactions, your payment information is encrypted and secured to provide a safe booking experince."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/descriptiontextview2"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/txtregbg"
+        android:backgroundTint="#888686"
+        android:ellipsize="middle"
+        android:paddingTop="20dp"
+        android:text="Real-Time Updates:Receive instant alerts about your joueney, including delays,platform changes, and any safety-related information."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/descriptiontextview3"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/txtregbg"
+        android:backgroundTint="#888686"
+        android:ellipsize="middle"
+        android:paddingTop="20dp"
+        android:text="Covid-19 Guidelines : Stay information abount he latest health and safety guidelines. We provide updates and reminders to help you travel responsibly."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/descriptiontextview7"
+        android:layout_width="wrap_content"
+        android:layout_height="118dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="613dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/txtregbg"
+        android:backgroundTint="#888686"
+        android:ellipsize="middle"
+        android:paddingTop="20dp"
+        android:text="Emergeny Assistance: in case of any emergencies, our app provides easy aceess to essential contrats and information"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-48dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/enterbtn"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/frame" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/msgvec" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/uservec" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/calvec" />
+    </LinearLayout>
+
+    <!-- Icons like home, chat, etc., would go here if this comment is to continue -->
+    <!-- Use ImageButton or other appropriate views to add icons -->
+
+</RelativeLayout>

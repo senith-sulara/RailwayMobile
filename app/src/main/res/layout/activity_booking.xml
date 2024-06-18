@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="802dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Ash color background -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Where Do you \nwant to go ?"
+                android:textColor="#FF9800"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="83dp"
+                android:layout_height="80dp"
+                android:background="@drawable/avat"
+                app:srcCompat="@drawable/iconsuser" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/txtregbg"
+            android:orientation="vertical">
+
+            <!-- Spinner for 'From' location -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="From"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinnerFrom"
+                    android:layout_width="256dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="25dp" />
+            </LinearLayout>
+
+            <!-- android:entries="@array/from_locations"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="To"
+                    android:textColor="@color/black" />
+                <!-- Spinner for 'To' location -->
+
+                <Spinner
+                    android:id="@+id/spinnerTo"
+                    android:layout_width="253dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:textAlignment="gravity" />
+            </LinearLayout>
+            <!-- android:entries="@array/to_locations"-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/txtregbg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textColor="@color/black" />
+                <!-- EditText for Date, with a calendar icon on the right -->
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="216dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/txtregbg"
+                    android:focusable="false"
+                    android:hint="Date"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!--android:drawableRight="@drawable/ic_calendar"-->
+
+
+            <!-- EditText for Number of Passengers -->
+
+            <!-- Switch for Return option -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="No of Passengers"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextPassengers"
+                    android:layout_width="216dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/txtregbg"
+                    android:hint="No of passengers"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchReturn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Return" />
+        </LinearLayout>
+
+        <!-- Continue button -->
+        <Button
+            android:id="@+id/buttoncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FFC107"
+            android:text="Cancel" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/priority" />
+
+            <Button
+                android:id="@+id/buttonContinue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="100dp"
+                android:backgroundTint="#FABD05"
+                android:text="Continue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Stay Safe"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:text="Learn More"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-48dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/enterbtn"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/frame" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/msgvec" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/uservec" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/calvec" />
+    </LinearLayout>
+
+    <!-- Icons like home, chat, etc., would go here if this comment is to continue -->
+    <!-- Use ImageButton or other appropriate views to add icons -->
+
+</RelativeLayout>

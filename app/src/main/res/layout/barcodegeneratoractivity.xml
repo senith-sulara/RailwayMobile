@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="675dp"
+        android:background="@drawable/enterbtn"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/frame" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/msgvec" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/uservec" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/calvec" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="50dp"
+
+        android:layout_marginBottom="165dp"
+
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#989898"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.011">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            android:text="Full Name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <TextView
+            android:id="@+id/Fname"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+
+            android:text="Full Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <LinearLayout
+            android:layout_width="176dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="75dp"
+            android:background="#FFC107"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewBarcode"
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#989898"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214">
+
+        <!-- TextView for Selected Date -->
+
+        <!-- TextView for Issus Date -->
+        <TextView
+            android:id="@+id/textViewSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="240dp"
+            android:text="Selected Date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textViewcnfe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="190dp"
+            android:text="11685270"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+
+        <TextView
+            android:id="@+id/textViewIssusDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="220dp"
+            android:text="Issus Date"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <TextView
+            android:id="@+id/textViewConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="170dp"
+            android:text="Confirmation Number"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <TextView
+            android:id="@+id/tfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="100dp"
+            android:text="Departs"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <TextView
+            android:id="@+id/dtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:text="Departure Time"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+        <TextView
+            android:id="@+id/depaturedateid"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="55dp"
+            android:text="time"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/fromid"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="130dp"
+            android:text="From"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/issus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="220dp"
+            android:text="Issued By"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <TextView
+            android:id="@+id/issusApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="240dp"
+            android:text="App"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <TextView
+            android:id="@+id/tto"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="130dp"
+            android:text="to"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+        <TextView
+            android:id="@+id/passid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger ID"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="55dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="100dp"
+            android:text="Arrives"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+             android:layout_marginLeft="169dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/male" />
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/ccc" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            app:srcCompat="@drawable/tttra" />
+        <ImageView
+            android:id="@+id/imageView55"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="180dp"
+            app:srcCompat="@drawable/cobf" />
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="30dp"
+            android:text="Passanger"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textViewSelectedDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectedDate" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="169dp"
+            android:layout_marginTop="110dp"
+            app:srcCompat="@drawable/tttra" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="321dp"
+        android:layout_height="42dp"
+        android:text="Make sure to show this to take your ticket"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

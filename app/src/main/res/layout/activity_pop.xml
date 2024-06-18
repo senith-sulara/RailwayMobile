@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lotust"
+    tools:context=".popActivity">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:textColor="#FFC107"
+        android:textSize="44dp"
+
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:text="RailRideMate" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:text="Welcome to RailRideMate,\nwhere you cantrack your train and\ndo the reservation"
+
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/lgmainbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#FFC107"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/signmainbtn"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFC107"
+        android:backgroundTint="@color/white"
+        android:text="Sign Up" />
+</LinearLayout>

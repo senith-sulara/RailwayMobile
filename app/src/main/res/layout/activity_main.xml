@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="871dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/txtregbg"
+                android:ems="10"
+                android:paddingStart="20dp"
+                android:inputType="text"
+                android:hint="Try 'Reservation'" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/railridetextview"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Why Book with RailRideMate?"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/descriptiontextview"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/txtregbg"
+            android:paddingTop="30dp"
+            android:backgroundTint="#888686"
+            android:ellipsize="middle"
+            android:text="Elevate your travel with our Train Tracking and Reservation System, simplifying bookings and offering real time updates for a seamless journey."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mainheadertextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+
+            android:text="What Can We Help You Find?"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="56dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnwhite"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/track" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/btnwhite"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/reserved" />
+
+            <ImageButton
+                android:id="@+id/imageButton118"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnwhite"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/message" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="Track"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="Reserve"
+                android:textAlignment="center"
+                android:textColor="#F6F6F6"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Chat"
+                android:textAlignment="center"
+                android:textColor="#F6F6F6"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="56dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnwhite"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/news" />
+
+            <ImageButton
+                android:id="@+id/imageButton81"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btnwhite"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/history" />
+            <ImageButton
+                android:id="@+id/imageButton812"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnwhite"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/male" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="News"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView161"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="History"
+                android:textAlignment="center"
+                android:textColor="#F6F6F6"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView162"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="#F6F6F6"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

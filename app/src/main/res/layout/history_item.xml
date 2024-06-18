@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/button_background"
+    android:layout_height="300dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="78dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vect" />
+
+        <LinearLayout
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rides" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:textColor="@color/white"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navoda" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="193dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewdate"
+                android:textColor="@color/white"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01 Feb 2024" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Completed"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="3.5"
+
+            android:progressBackgroundTint="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vecg" />
+
+        <TextView
+            android:id="@+id/textViewfrom"
+            android:layout_width="343dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="34dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView277"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vecr" />
+
+        <TextView
+            android:id="@+id/textViewto"
+            android:layout_width="343dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Details"
+            android:textColor="#FFC107" />
+
+        <TextView
+            android:id="@+id/textViewtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="LKR" />
+    </LinearLayout>
+
+</LinearLayout>

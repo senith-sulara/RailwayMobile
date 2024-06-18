@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RailRideMate</string>
+    <string name="google_maps_key">API_KEY</string>
+    <string name="select_news_subject">Select News Subject</string>
+    <array name="news_subjects">
+        <item>delays</item>
+        <item>canceled</item>
+        <!-- Add more subjects as needed -->
+    </array>
+</resources>
